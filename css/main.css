@@ -187,6 +187,10 @@ h2 {
     animation: 3s linear 0s infinite luz_derecha;
 }
 
+.block_pasos {
+    font-size: 1.125rem;
+}
+
 .block {
     border-top: 4px solid transparent;
     border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
