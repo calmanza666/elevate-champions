@@ -211,6 +211,10 @@ h2 {
     animation: 6s ease-in-out 0s infinite luz_derecha;
 }
 
+.block_pasos {
+    font-size: 1.125rem;
+}
+
 .block {
     border-top: 4px solid transparent;
     border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
@@ -240,6 +244,31 @@ h2 {
     background-image: url(../img/background/trama.png);
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.content_review_user {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.message_box {
+    height: 5rem;
+}
+
+.username {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.letra_user {
+    border-radius: 6.25rem;
+    background: #596B80;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.25rem;
+    text-align: center;
 }
 
 @keyframes luz_izquierda {
@@ -351,8 +380,9 @@ h2 {
 #compite {
     margin-top: 10rem;
 }
-#como_funciona {
-    margin-top: 5rem;
+
+.raya_horizontal {
+    margin: 5rem auto;
 }
 
 .subtitulo {
@@ -371,12 +401,27 @@ h2 {
     font-size: 3rem;
     font-weight: 700;
 }
+#reviews, .block_reviews {
+    margin-top: 5rem;
+}
+
+#reviews h2 {
+    font-size: 3.75rem;
+}
+
+img.img_comilla_final {
+    transform: rotate(180deg);
+}
+
+span.msg_user {
+    font-size: 1rem;
+}
+
 @media (min-width: 576px) {
     .container-fluid {
         width: 90%;
     }
 }
-
 @media (min-width: 768px) {
     .container-fluid {
         width: 90%;
