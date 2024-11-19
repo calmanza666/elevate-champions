@@ -1,6 +1,3 @@
-html {
-    -webkit-print-color-adjust: exact;
-}
 :root {
     /* background */
     --background-principal:  #061130;
@@ -32,6 +29,7 @@ html {
 }
 
 html{
+    -webkit-print-color-adjust: exact;
     font-size: 1rem;
 }
 *::-webkit-scrollbar
@@ -82,8 +80,24 @@ a{
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: normal;
+}
+
+.nro {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem 0px;
+    font-size: 3rem;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    background-color: #05224D;
+    border-radius: 6.25rem;
 }
 
 @keyframes clickin {
@@ -113,7 +127,7 @@ h2 {
     margin-top: 12rem;
 }
 .texto_degrade{
-    background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 53.27%, #00EAF1 100%);
+    background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 10%, #00EAF1 100%);
     -webkit-background-clip: text;
     color: transparent;  
 }
@@ -165,6 +179,14 @@ h2 {
     translate: 35% -1%;
     transform-origin: 64% 81%;
     animation: 3s linear 0s infinite luz_derecha;
+}
+
+.block {
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
+    border-image-slice: 1;
+    background: rgba(0, 0, 0, 0.20);
+    padding: 2rem;
 }
 @keyframes luz_izquierda {
     0% {
