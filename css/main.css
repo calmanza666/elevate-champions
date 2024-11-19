@@ -47,6 +47,8 @@ body{
     font-weight: normal;
     min-height: 100vh;
     background: var(--background-principal);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 
 *::-webkit-scrollbar-thumb
@@ -99,7 +101,7 @@ h2 {
 .titulo_principal{
     color: #fff;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 .parrafo_1{
@@ -108,6 +110,7 @@ h2 {
     font-weight: 400;
     line-height: 2.75rem;
     text-align: center;
+    margin-top: 12rem;
 }
 .texto_degrade{
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 53.27%, #00EAF1 100%);
@@ -120,6 +123,7 @@ h2 {
     padding: 0.5rem 1.25rem;
     background: var(--background-btn);
     color: #fff;
+    font-size: 1.25rem;
 }
 .btn_degradado:hover, .btn_degradado:active, .btn_degradado:focus, .btn_degradado:focus-within, .btn_degradado:focus-visible{
     color: #fff!important;
@@ -136,18 +140,29 @@ h2 {
     position: relative;
 }
 #inicio .luz{
+    position: absolute;
     width: 90rem;
     top: -250px;
 }
-#inicio .luz_izquierda{
+#inicio .humo{
     position: absolute;
-    left: -36%;
+    bottom: 30%;
+    z-index: 1;
+}
+#inicio .humo_derecha{
+    right: 0;
+}
+#inicio .humo_izquierda{
+    left: 0;
+}
+#inicio .luz_izquierda{
+    translate: -39%;
     transform-origin: 34% 82%;
     animation: 3s linear 0s infinite luz_izquierda;
 }
 #inicio .luz_derecha{
-    position: absolute;
-    right: -33%;
+    right: 0;
+    translate: 35% -1%;
     transform-origin: 64% 81%;
     animation: 3s linear 0s infinite luz_derecha;
 }
@@ -164,19 +179,24 @@ h2 {
 }
 @keyframes luz_derecha {
     0% {
-        transform: rotate(369deg);
+        transform:rotate(8deg);
     }
     50%{
-        transform: rotate(350deg);
+        transform:rotate(-8deg);
     }
     100%{
-        transform: rotate(369deg);
+        transform:rotate(8deg);
     }
 }
 .container-fluid{
     width: 1320px;
+<<<<<<< HEAD
     /* display: flex; */
     justify-content: center;
+=======
+    /* display: flex;
+    justify-content: center; */
+>>>>>>> 2ce1244a158e9f4c2aebaf997ba58a51b25e51b9
     /* align-items: center; */
 }
 .inicio_container{
