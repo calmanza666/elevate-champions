@@ -117,18 +117,63 @@ a{
     color: #fff!important;
 }
 #inicio.container-fluid{
+    overflow: hidden;
     margin-top: 89.6px;
-    min-height: calc(100vh - 89.6px);
+    aspect-ratio: 1;
+    /* min-height: calc(100vh - 89.6px); */
     background-image: url('../img/background/background-estadio.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    position: relative;
+}
+#inicio .luz{
+    width: 90rem;
+    top: -250px;
+}
+#inicio .luz_izquierda{
+    position: absolute;
+    left: -36%;
+    transform-origin: 34% 82%;
+    animation: 3s linear 0s infinite luz_izquierda;
+}
+#inicio .luz_derecha{
+    position: absolute;
+    right: -33%;
+    transform-origin: 64% 81%;
+    animation: 3s linear 0s infinite luz_derecha;
+}
+@keyframes luz_izquierda {
+    0% {
+        transform: rotate(369deg);
+    }
+    50%{
+        transform: rotate(350deg);
+    }
+    100%{
+        transform: rotate(369deg);
+    }
+}
+@keyframes luz_derecha {
+    0% {
+        transform: rotate(369deg);
+    }
+    50%{
+        transform: rotate(350deg);
+    }
+    100%{
+        transform: rotate(369deg);
+    }
 }
 .container-fluid{
     width: 1320px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+}
+.inicio_container{
+    margin-top: 10rem;
+    z-index: 1;
 }
 
 @media (min-width: 576px){
