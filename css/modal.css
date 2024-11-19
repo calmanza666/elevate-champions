@@ -1,0 +1,21 @@
+html {
+    -webkit-print-color-adjust: exact;
+}
+:root {
+    /* background */
+    --background-modal: linear-gradient(0deg, #060E2C 31.88%, rgb(6 43 99) 100%);
+    ;
+}
+
+.modal-content{
+    background: var(--background-modal);
+    color: #fff;
+    border: 0;
+}
+.modal-header{
+    border: 0;
+    padding-bottom: 0;
+}
+.btn-close{
+    filter: brightness(0) invert(1);
+}
