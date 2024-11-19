@@ -42,6 +42,9 @@ html{
     border-radius: 1rem;
 }
 body{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: normal;
     min-height: 100vh;
     background: var(--background-principal);
 }
@@ -74,6 +77,11 @@ a{
     border: 0;
     animation-duration: 0.6s;
     animation-name: clickin;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: normal;
 }
 
 @keyframes clickin {
@@ -167,7 +175,7 @@ a{
 }
 .container-fluid{
     width: 1320px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     /* align-items: center; */
 }
