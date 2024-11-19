@@ -216,8 +216,15 @@ h2 {
     border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
     border-image-slice: 1;
     background: rgba(0, 0, 0, 0.20);
-    padding: 2rem;
+    padding: 2rem 1.25rem;
+    font-size: 1.125rem;
 }
+
+.block ul {
+    padding: 1.25rem;
+    margin: 0px;
+}
+
 @keyframes luz_izquierda {
     0% {
         transform: rotate(369deg);
