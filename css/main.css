@@ -182,12 +182,13 @@ h2 {
     position: absolute;
     width: 90rem;
     top: -420px;
+    z-index: -2;
 }
 
 #inicio .humo {
     position: absolute;
     bottom: 34%;
-    z-index: 1;
+    z-index: -1;
 }
 
 #inicio .humo_derecha {
@@ -300,7 +301,7 @@ h2 {
 }
 
 .container-fluid {
-    width: 90%;
+    width: 95%;
 }
 
 .inicio_container {
@@ -419,12 +420,12 @@ span.msg_user {
 
 @media (min-width: 576px) {
     .container-fluid {
-        width: 90%;
+        width: 95%;
     }
 }
 @media (min-width: 768px) {
     .container-fluid {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -436,7 +437,7 @@ span.msg_user {
 
 @media (min-width: 1200px) {
     .container-fluid {
-        width: 928px;
+        width: 1168px;
     }
 }
 
