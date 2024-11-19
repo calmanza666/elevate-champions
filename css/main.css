@@ -1,45 +1,46 @@
 :root {
     /* background */
-    --background-principal:  #061130;
-    --background-btn:  linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
+    --background-principal: #061130;
+    --background-btn: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
 
     /* form */
     --form-input-invalid: #ff5151;
     --form-input-focus: #007cff;
     --form-input-valid: #007cff;
-    --form-input-placeholder:#a0aec0;
-    --form-input-border:rgba(160,174,192,.537);
-    --form-btn-submit:#007cff;
+    --form-input-placeholder: #a0aec0;
+    --form-input-border: rgba(160, 174, 192, .537);
+    --form-btn-submit: #007cff;
     --form-dashborad-input-border: #ffffff6a;
 
     /* menu */
-    --menu-opcion-background-icon-container:#e1e5ef;
-    --menu-opcion-subopcion:#a0aec0;
-    --menu-opcion-subopcion-hover:#fff;
-    --menu-opcion-subopcion-vineta:#0075FF;
+    --menu-opcion-background-icon-container: #e1e5ef;
+    --menu-opcion-subopcion: #a0aec0;
+    --menu-opcion-subopcion-hover: #fff;
+    --menu-opcion-subopcion-vineta: #0075FF;
 
     /* navbar */
-    --navbar-letra-perfil:#d15e1f;
+    --navbar-letra-perfil: #d15e1f;
 
     /* botones */
     --botones-celeste: #007CFF;
     --botones-celeste-hover: #0368d4;
-    --botones-outline_blanco:none;
-    --botones-outline_blanco-hover:none;
+    --botones-outline_blanco: none;
+    --botones-outline_blanco-hover: none;
 }
 
-html{
+html {
     -webkit-print-color-adjust: exact;
     font-size: 1rem;
 }
-*::-webkit-scrollbar
-{
+
+*::-webkit-scrollbar {
     width: 0.5rem;
     height: 0.5rem;
     background-color: #fff;
     border-radius: 1rem;
 }
-body{
+
+body {
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     font-weight: normal;
@@ -49,22 +50,26 @@ body{
     font-style: normal;
 }
 
-*::-webkit-scrollbar-thumb
-{
+*::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-color: var(--botones-celeste);
 }
 
-p{
+p {
     margin-bottom: 0;
     text-wrap: auto;
     line-height: 1.2;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.btn{
+.card {
+    border: 0;
+}
+
+.btn {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -75,7 +80,10 @@ a{
     font-size: 0.8rem;
     padding: 0.5rem;
 }
-.btn:active,.btn:focus,.btn:focus-visible{
+
+.btn:active,
+.btn:focus,
+.btn:focus-visible {
     border: 0;
     animation-duration: 0.6s;
     animation-name: clickin;
@@ -106,25 +114,29 @@ h2 {
     0% {
         scale: 1;
     }
+
     50% {
         scale: 0.98;
     }
-    100%{
-        scale:1
+
+    100% {
+        scale: 1
     }
 }
 
-.titulo_principal{
+.titulo_principal {
     color: #fff;
     font-weight: 600;
     font-size: 3rem;
     text-align: center;
 }
-.titulo_seccion{
+
+.titulo_seccion {
     font-size: 3.75rem;
     text-align: center;
 }
-.parrafo_1{
+
+.parrafo_1 {
     font-size: 2.25rem;
     color: #fff;
     font-weight: 400;
@@ -135,20 +147,26 @@ h2 {
 .texto_degrade{
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 10%, #00EAF1 100%);
     -webkit-background-clip: text;
-    color: transparent;  
+    color: transparent;
 }
 
-.btn_degradado{
+.btn_degradado {
     border-radius: 0.75rem;
     padding: 0.5rem 1.25rem;
     background: var(--background-btn);
     color: #fff;
     font-size: 1.25rem;
 }
-.btn_degradado:hover, .btn_degradado:active, .btn_degradado:focus, .btn_degradado:focus-within, .btn_degradado:focus-visible{
-    color: #fff!important;
+
+.btn_degradado:hover,
+.btn_degradado:active,
+.btn_degradado:focus,
+.btn_degradado:focus-within,
+.btn_degradado:focus-visible {
+    color: #fff !important;
 }
-#inicio.container-fluid{
+
+#inicio.container-fluid {
     overflow: hidden;
     margin-top: 89.6px;
     aspect-ratio: 1;
@@ -159,28 +177,34 @@ h2 {
     width: 100%;
     position: relative;
 }
-#inicio .luz{
+
+#inicio .luz {
     position: absolute;
     width: 90rem;
     top: -250px;
 }
-#inicio .humo{
+
+#inicio .humo {
     position: absolute;
     bottom: 30%;
     z-index: 1;
 }
-#inicio .humo_derecha{
+
+#inicio .humo_derecha {
     right: 0;
 }
-#inicio .humo_izquierda{
+
+#inicio .humo_izquierda {
     left: 0;
 }
-#inicio .luz_izquierda{
+
+#inicio .luz_izquierda {
     translate: -39%;
     transform-origin: 34% 82%;
     animation: 3s linear 0s infinite luz_izquierda;
 }
-#inicio .luz_derecha{
+
+#inicio .luz_derecha {
     right: 0;
     translate: 35% -1%;
     transform-origin: 64% 81%;
@@ -209,101 +233,132 @@ h2 {
     0% {
         transform: rotate(369deg);
     }
-    50%{
+
+    50% {
         transform: rotate(350deg);
     }
-    100%{
+
+    100% {
         transform: rotate(369deg);
     }
 }
+
 @keyframes luz_derecha {
     0% {
-        transform:rotate(8deg);
+        transform: rotate(8deg);
     }
-    50%{
-        transform:rotate(-8deg);
+
+    50% {
+        transform: rotate(-8deg);
     }
-    100%{
-        transform:rotate(8deg);
+
+    100% {
+        transform: rotate(8deg);
     }
 }
-.container-fluid{
-    width: 1320px;
+
+.container-fluid {
+    width: 1168px;
 }
-.inicio_container{
+
+.inicio_container {
     margin-top: 10rem;
     z-index: 1;
 }
-.card_torneo{
+
+.card_torneo {
     border-radius: 1rem;
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
     padding: 0.2rem;
 }
-.card_background{
+
+.card_background {
     border-radius: 0.8rem;
     padding: 1rem;
     background: linear-gradient(181deg, #00388C 1.1%, #061130 70.19%);
     box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.25);
 }
-.nombre_torneo{
+
+.nombre_torneo {
     color: #fff;
     font-size: 1.75rem;
     text-align: center;
 }
-.card_torneo_secundario{
+
+.card_torneo_secundario {
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: rgba(0, 0, 0, 0.20);
     padding: 0.8rem;
 }
-.card_torneo_secundario_label{
+
+.card_torneo_secundario_label {
     text-align: center;
     color: #A0AEC0;
     font-size: 0.8rem;
 }
-.card_torneo_secundario_valor span{
+
+.card_torneo_secundario_valor span {
     color: #A0AEC0;
     font-size: 0.8rem;
     font-weight: normal;
 }
-.card_torneo_secundario_valor{
+
+.card_torneo_secundario_valor {
     text-align: center;
     color: #fff;
     font-weight: 700;
     font-size: 0.9rem;
 }
-.raya_horizontal{
+
+.raya_horizontal {
     height: 1px;
     width: 100%;
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
 }
-.card_torneo_secundario_label_caracteristicas{
+
+.card_torneo_secundario_label_caracteristicas {
     color: #fff;
 }
-.card_torneo_secundario_valor_caracteristicas{
+
+.card_torneo_secundario_valor_caracteristicas {
     color: #fff;
     font-weight: 600;
     text-align: center;
 }
-.card_torneo_secundario_null_caracteristicas{
+
+.card_torneo_secundario_null_caracteristicas {
     color: #fff;
     font-weight: normal;
-    text-decoration:line-through;
+    text-decoration: line-through;
     text-align: center;
     font-size: 0.8rem;
 }
-@media (min-width: 576px){
 
+#compite {
+    margin-top: 10rem;
 }
-@media (min-width: 768px){
+#como_funciona {
+    margin-top: 5rem;
+}
 
+.subtitulo {
+    color: #fff;
+    font-size: 1.5rem;
 }
-@media (min-width: 992px){
 
+.parrafo {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
-@media (min-width: 1200px){
 
-}
-@media (min-width: 1400px){
+@media (min-width: 576px) {}
 
-}
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
