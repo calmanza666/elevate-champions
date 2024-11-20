@@ -14,6 +14,7 @@ class ImpulseProducts extends HTMLElement {
           align-items: center;
           outline: 0;
           border: unset;
+          cursor:pointer;
         }
 
         .btn_degradado {
@@ -272,7 +273,7 @@ class ModalChallenge extends HTMLElement {
         dialog {
           width: 523px;
           height: Hug (483px)px;
-          padding: 10px 20px 20px 20px;
+          padding: 30px 40px;
           gap: 0px;
           border-radius: 20px;
           opacity: 0px;
@@ -636,19 +637,19 @@ class ModalChallenge extends HTMLElement {
       <dialog close id="modal">
           <container>
               <span id="close-modal" class="close">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffff" xmlns="http://www.w3.org/2000/svg">
                       <mask id="mask0_8632_24948" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
                           width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9" />
+                          <rect width="24" height="24" fill="#ffff" />
                       </mask>
                       <g mask="url(#mask0_8632_24948)">
                           <path
                               d="M12.0005 13.0538L6.92737 18.1269C6.78892 18.2654 6.61489 18.3362 6.40527 18.3394C6.19567 18.3426 6.01844 18.2718 5.87357 18.1269C5.72869 17.982 5.65625 17.8064 5.65625 17.6C5.65625 17.3936 5.72869 17.218 5.87357 17.0731L10.9466 12L5.87357 6.9269C5.73511 6.78845 5.66427 6.61442 5.66107 6.4048C5.65786 6.1952 5.72869 6.01797 5.87357 5.8731C6.01844 5.72822 6.19407 5.65578 6.40047 5.65578C6.60687 5.65578 6.78251 5.72822 6.92737 5.8731L12.0005 10.9462L17.0736 5.8731C17.212 5.73464 17.3861 5.6638 17.5957 5.6606C17.8053 5.65739 17.9825 5.72822 18.1274 5.8731C18.2723 6.01797 18.3447 6.1936 18.3447 6.4C18.3447 6.6064 18.2723 6.78203 18.1274 6.9269L13.0543 12L18.1274 17.0731C18.2658 17.2116 18.3367 17.3856 18.3399 17.5952C18.3431 17.8048 18.2723 17.982 18.1274 18.1269C17.9825 18.2718 17.8069 18.3442 17.6005 18.3442C17.3941 18.3442 17.2184 18.2718 17.0736 18.1269L12.0005 13.0538Z"
-                              fill="black" />
+                              fill="#ffff" />
                       </g>
                   </svg>
               </span>
-              <span class="text">Estos son los detalles del desafío que elegiste:</span>
+              <span class="text" style="margin-top:0;">Estos son los detalles del desafío que elegiste:</span>
               <span id="productType" class="title">Classic 6</span>
               <div class="column">
                   <div class="row">
