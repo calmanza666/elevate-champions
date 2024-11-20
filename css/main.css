@@ -637,6 +637,12 @@ section#reglas a {
     color: #51DEE6 !important;
 }
 
+.proximamente_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .proximamente {
     font-size: 1.12rem;
     color: #A0AEC0 !important;
