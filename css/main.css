@@ -182,7 +182,7 @@ h2 {
 .btn_degradado:focus-visible {
     color: #fff !important;
 }
-#inicio.container-fluid{
+#inicio.container-fluid.elevate{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -347,7 +347,7 @@ section#primera_edicion,section#reglas,section#reviews{
     }
 }
 
-.container-fluid {
+.container-fluid.elevate {
     width: 95%;
 }
 
@@ -487,7 +487,7 @@ section#como_participar {
     padding: 5rem 0px 0px 0px;
 }
 
-#ediciones_pasadas.container-fluid {
+#ediciones_pasadas.container-fluid.elevate {
     background-image: url('../img/background/bg_estadio.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -581,7 +581,7 @@ section#reglas a {
 
 .nombre-oferta{
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
     color: white;
 }
 
@@ -606,7 +606,7 @@ section#reglas a {
 }
 
 @media (min-width: 576px) {
-    .container-fluid {
+    .container-fluid.elevate {
         width: 95%;
     }
 
@@ -619,7 +619,7 @@ section#reglas a {
     .titulo_seccion {
         font-size: 3.75rem;
     }
-    .container-fluid {
+    .container-fluid.elevate {
         width: 95%;
     }
     html {
@@ -638,25 +638,25 @@ section#reglas a {
     .box_adquirir_cupo .card_background {
         padding: 4.5rem;
     }
-    .container-fluid {
+    .container-fluid.elevate {
         width: 95%;
     }
 }
 
 @media (min-width: 1200px) {
-    .container-fluid {
+    .container-fluid.elevate {
         width: 996px;
     }
 }
 
 @media (min-width: 1400px) {
-    .container-fluid {
+    .container-fluid.elevate {
         width: 1168px;
     }
 }
 
 @media (min-width: 1920px) {
-    .inicio_container.container-fluid {
+    .inicio_container.container-fluid.elevate {
         width: 1500px;
     }
 }
