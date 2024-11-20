@@ -501,7 +501,7 @@ section#como_participar {
 }
 
 .box_adquirir_cupo .card_background {
-    padding: 4.5rem;
+    padding: 1.25rem 1rem;
     color: #ffffff;
 }
 
@@ -605,6 +605,9 @@ section#reglas a {
 }
 
 @media (min-width: 992px) {
+    .box_adquirir_cupo .card_background {
+        padding: 4.5rem;
+    }
     .container-fluid {
         width: 95%;
     }
