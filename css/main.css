@@ -155,8 +155,10 @@ h2 {
     border-radius: 0.75rem;
     padding: 0.5rem 1.25rem;
     background: var(--background-btn);
-    color: #fff;
+    color: #000;
     font-size: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 .btn_degradado:hover,
@@ -403,7 +405,7 @@ h2 {
     font-weight: 700;
 }
 
-#ediciones_pasadas {
+#ediciones_pasadas, .box_adquirir_cupo {
     margin-bottom: 5rem;
 }
 
@@ -413,7 +415,7 @@ h2 {
     position: relative;
 }
 
-#reviews, .block_separador, #ediciones_pasadas {
+#reviews, .block_separador, #ediciones_pasadas, .box_adquirir_cupo {
     margin-top: 5rem;
 }
 
@@ -441,9 +443,23 @@ section#como-participar {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    overflow: hidden;
     position: relative;
 }
 
+#ediciones_pasadas > .container-fluid {
+    margin-top: 10rem;
+}
+
+.box_adquirir_cupo {
+    padding: 5rem 0px;
+    font-size: 2.25rem;
+    background: rgb(0, 56, 140);
+    background: -moz-linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
+    border-radius: 1rem !important;
+}
 @media (min-width: 576px) {
     .container-fluid {
         width: 95%;
