@@ -575,6 +575,36 @@ section#reglas a {
     color: #51DEE6;
 }
 
+.card_torneo.inactivo button.btn_degradado{
+    background: #646e7b;
+}
+
+.nombre-oferta{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.precio-oferta{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.icono-dolar{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.precio-dolar{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.abrev-dolar{
+    padding-top: 8%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 @media (min-width: 576px) {
     .container-fluid {
         width: 95%;
