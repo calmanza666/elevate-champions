@@ -147,6 +147,7 @@ h2 {
 
 .titulo_seccion {
     font-size: 2.75rem;
+    margin-bottom: 4.8rem;
 }
 
 .parrafo_1 {
@@ -156,7 +157,7 @@ h2 {
     line-height: 2.75rem;
     text-align: center;
     margin-top: 10rem;
-    margin-bottom: 15rem;
+    margin-bottom: 12.5rem;
 }
 .texto_degrade{
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 10%, #00EAF1 100%);
@@ -181,16 +182,22 @@ h2 {
 .btn_degradado:focus-visible {
     color: #fff !important;
 }
-
-#inicio.container-fluid {
+#inicio.container-fluid{
+    position: relative;
     overflow: hidden;
+    width: 100%;
+}
+.background_inicio {
     background-position-y: -177px;
     background-position-x: center;
     background-image: url('../img/background/background-estadio.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    position: relative;
+    position: absolute;
+    z-index: -3;
+    -webkit-mask-image: linear-gradient(to top, transparent 48%, black 69%);
+    mask-image: linear-gradient(to top, transparent 48%, black 69%);
 }
 
 #inicio .luz {
@@ -222,8 +229,8 @@ h2 {
 
 
 #inicio .humo_derecha {
-    right: -434px;
-    bottom: 30%;
+    right: -260px;
+    bottom: 35%;
 }
 
 #inicio .humo_izquierda {
@@ -278,11 +285,13 @@ h2 {
     background-position: center;
 }
 #primera_edicion{
-    height: 600px;
     background-image: url(../img/background/trama.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+}
+section#primera_edicion{
+    margin-bottom: 12.5rem;
 }
 
 .content_review_user {
@@ -395,13 +404,18 @@ h2 {
     font-weight: 700;
     font-size: 0.9rem;
 }
-
+.separador_elementos_625{
+    margin-bottom: 6.25rem;
+}
 .raya_horizontal {
+    margin: 6.25rem auto;
     height: 1px;
     width: 100%;
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
 }
-
+.img_compite{
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.25);
+}
 .card_torneo_secundario_label_caracteristicas {
     color: #fff;
 }
@@ -418,14 +432,6 @@ h2 {
     text-decoration: line-through;
     text-align: center;
     font-size: 0.8rem;
-}
-
-#compite {
-    margin-top: 10rem;
-}
-
-.raya_horizontal {
-    margin: 5rem auto;
 }
 
 .subtitulo {
@@ -594,11 +600,5 @@ ul.desc_premio li {
 @media (min-width: 1920px) {
     .inicio_container.container-fluid {
         width: 1500px;
-    }
-}
-@media (min-width: 2000px) {
-    #inicio.container-fluid {
-        -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
-        mask-image: linear-gradient(to top, transparent -58%, black 69%);
     }
 }
