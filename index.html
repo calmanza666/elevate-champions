@@ -563,6 +563,22 @@
     </section>
 
     <!-- XD 4-->
+    <section id="participa_torneo" class="container-fluid">
+        <div class="row row-gap-3 justify-content-center d-flex align-items-center">
+            <div class="col-12">
+                <h2 class="titulo_seccion text-center">
+                    <strong><span class="texto_degrade">Participa</span></strong> del torneo
+                </h2>
+            </div>
+            <div class="col-6">
+                <div class="count_down">
+                    <div class="row row-gap-5 d-flex align-items-center" id="demo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="como_participar" class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -727,7 +743,7 @@
                         <div class="col-12">
                             <div class="row row-gap-3 justify-content-center">
                                 <div class="col-xl-9">
-                                    Tener en cuenta que a todas las ediciones de Elevate aplican las políticas y reglas de trading.<br>
+                                    Tener en cuenta que a todas las ediciones de Elevate aplican las <a href="https://help.impulseworld.pro/es/collections/9640694-politicas-y-reglas-de-trading-tu-guia-completa">políticas y reglas de trading</a>.<br>
                                     <strong>Importante:</strong> El incumplimiento de estas reglas puede resultar en descalificación.
                                 </div>
                             </div>
@@ -893,17 +909,21 @@
                             </div>
                             <div class="col-12 box_adquirir_cupo">
                                 <div class="container-fluid">
-                                    <div class="row row-gap-4 justify-content-center">
-                                        <div class="col-10">
-                                            <p class="text-center">
-                                                ¿Estás listo para ser parte de la historia?<br>
-                                                <strong>¡Inscríbete en <span class="texto_degrade">Elevate Champions</span> y demuestra tus habilidades!</strong>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="row justify-content-center">
-                                                <div class="col-4">
-                                                    <a href="#" class="btn btn_degradado">Unirme al torneo</a>
+                                    <div class="card card_torneo">
+                                        <div class="card_background">
+                                            <div class="row row-gap-4 justify-content-center">
+                                                <div class="col-10">
+                                                    <p class="text-center">
+                                                        ¿Estás listo para ser parte de la historia?<br>
+                                                        <strong>¡Inscríbete en <span class="texto_degrade">Elevate Champions</span> y demuestra tus habilidades!</strong>
+                                                    </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-4">
+                                                            <a href="#" class="btn btn_degradado">Unirme al torneo</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -921,6 +941,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://raw.githubusercontent.com/graingert/WOW/refs/heads/master/src/WOW.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = '<div class=col-3><div class="item_count text-center dias"><h3>'+days+'</h3><p>Días</div></div><div class=col-3><div class="item_count text-center horas"><h3>'+hours+'</h3><p>Horas</div></div><div class=col-3><div class="item_count text-center minutos"><h3>'+minutes+'</h3><p>Minutos</div></div><div class=col-3><div class="item_count text-center segundos"><h3>'+seconds+'</h3><p>Segundos</div></div>';
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            //document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
     <script>
         new WOW().init();
     </script>
