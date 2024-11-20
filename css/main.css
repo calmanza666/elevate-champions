@@ -206,10 +206,10 @@ h2 {
     opacity: 0.3;
 }
 
-/* .humo_1{animation: 3s ease-in-out 0s infinite humo;}
+.humo_1{animation: 3s ease-in-out 0s infinite humo;}
 .humo_2{animation: 3s ease-in-out 3s infinite humo;}
 .humo_3{animation: 3s ease-in-out 6s infinite humo;}
-.humo_4{animation: 3s ease-in-out 9s infinite humo;} */
+.humo_4{animation: 3s ease-in-out 9s infinite humo;}
 
 @keyframes humo {
     0% { opacity: 0.3; }
@@ -221,7 +221,8 @@ h2 {
 
 
 #inicio .humo_derecha {
-    right: -227px;
+    right: -434px;
+    bottom: 30%;
 }
 
 #inicio .humo_izquierda {
