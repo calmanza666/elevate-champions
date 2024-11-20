@@ -405,8 +405,23 @@ h2 {
     font-size: 3rem;
     font-weight: 700;
 }
-#reviews, .block_reviews {
+
+#ediciones_pasadas {
+    margin-bottom: 5rem;
+}
+
+#reviews {
+    overflow: hidden;
+    background: url('../img/background/bg_bola.png') center center no-repeat;
+    position: relative;
+}
+
+#reviews, .block_separador, #ediciones_pasadas {
     margin-top: 5rem;
+}
+
+#reviews h2, #ediciones_pasadas h2 {
+    font-size: 3.75rem;
 }
 
 img.img_comilla_final {
@@ -415,6 +430,21 @@ img.img_comilla_final {
 
 span.msg_user {
     font-size: 1rem;
+}
+
+section#como-participar {
+    overflow: hidden;
+    background: url('../img/background/bg_humo.png') center center no-repeat;
+    position: relative;
+    padding: 5rem 0px 0px 0px;
+}
+
+#ediciones_pasadas {
+    background-image: url('../img/background/bg_estadio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
 }
 
 @media (min-width: 576px) {
