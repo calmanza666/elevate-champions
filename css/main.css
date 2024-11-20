@@ -637,6 +637,11 @@ section#reglas a {
     color: #51DEE6 !important;
 }
 
+.proximamente {
+    font-size: 1.12rem;
+    color: #A0AEC0 !important;
+    font-weight: 400;
+}
 
 .card_torneo.inactivo button.btn_degradado{
     background: #646e7b!important;
