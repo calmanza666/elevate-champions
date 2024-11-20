@@ -606,7 +606,7 @@ section#reglas a {
 }
 
 .segundos h3 {
-    color: #51DEE6;
+    color: #51DEE6 !important;
 }
 
 #reloj_lanzamiento .item_count h3,
@@ -633,7 +633,7 @@ section#reglas a {
 #reloj_preventa2 .segundos h3,
 #reloj_precioregular .segundos h3 {
     font-size: 1.5rem !important;
-    color: #51DEE6;
+    color: #51DEE6 !important;
 }
 
 
