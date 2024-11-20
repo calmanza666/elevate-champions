@@ -615,6 +615,24 @@ section#reglas a {
     color: #51DEE6;
 }
 
+#reloj_lanzamiento .item_count h3 {
+    line-height: 2rem;
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+
+#reloj_lanzamiento .item_count p {
+    font-size: .8rem !important;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+#reloj_lanzamiento .segundos h3 {
+    font-size: 1rem !important;
+    color: #51DEE6;
+}
+
+
 .card_torneo.inactivo button.btn_degradado{
     background: #646e7b;
 }

@@ -678,6 +678,11 @@
                                         <h2 class="nombre-oferta">Lanzamiento</h2>
                                     </div>
                                     <div class="col-12">
+                                        <div class="row row-gap-5 d-flex align-items-center" id="reloj_lanzamiento">
+                                            <div class=col-3><div class="item_count text-center dias"><h3>'+days+'</h3><p>Días</div></div><div class=col-3><div class="item_count text-center horas"><h3>'+hours+'</h3><p>Horas</div></div><div class=col-3><div class="item_count text-center minutos"><h3>'+minutes+'</h3><p>Minutos</div></div><div class=col-3><div class="item_count text-center segundos"><h3>'+seconds+'</h3><p>Segundos</div></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
                                         <div class="precio-oferta">
                                             <p class="icono-dolar texto_degrade">$</p><p class="precio-dolar">50</p><p class="abrev-dolar">USD</p>
                                         </div>
@@ -1160,10 +1165,11 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="./js/contador.js"></script>
+    <script src="https://impulseworld.pro/wp-content/themes/impulsetrading/champions/js/contador.js"></script>
     <!-- <script src="https://impulseworld.pro/wp-content/themes/impulsetrading/champions/js/impulse-products-component.js"></script> -->
     <script>
         contador("11/12/2024 19:00", "reloj_torneo");
+        contador("22/11/2024 23:59", "reloj_lanzamiento");
     </script>
 </body>
 </html>
