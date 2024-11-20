@@ -191,8 +191,6 @@ h2 {
     background-size: cover;
     width: 100%;
     position: relative;
-    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
-    mask-image: linear-gradient(to top, transparent -58%, black 69%);
 }
 
 #inicio .luz {
