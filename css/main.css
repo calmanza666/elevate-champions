@@ -185,8 +185,7 @@ h2 {
 #inicio.container-fluid {
     overflow: hidden;
     background-position-y: -177px;
-    /* aspect-ratio: 1; */
-    /* min-height: calc(100vh - 89.6px); */
+    background-position-x: center;
     background-image: url('../img/background/background-estadio.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -595,5 +594,11 @@ ul.desc_premio li {
 @media (min-width: 1920px) {
     .inicio_container.container-fluid {
         width: 1500px;
+    }
+}
+@media (min-width: 2000px) {
+    #inicio.container-fluid {
+        -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
+        mask-image: linear-gradient(to top, transparent -58%, black 69%);
     }
 }
