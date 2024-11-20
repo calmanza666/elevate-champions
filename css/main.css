@@ -402,11 +402,16 @@ h2 {
     font-size: 3rem;
     font-weight: 700;
 }
-#reviews, .block_reviews {
+
+#ediciones_pasadas {
+    margin-bottom: 5rem;
+}
+
+#reviews, .block_reviews, #ediciones_pasadas {
     margin-top: 5rem;
 }
 
-#reviews h2 {
+#reviews h2, #ediciones_pasadas h2 {
     font-size: 3.75rem;
 }
 
