@@ -52,7 +52,7 @@ body {
 
 *::-webkit-scrollbar-thumb {
     border-radius: 1rem;
-    background-color: var(--botones-celeste);
+    background: linear-gradient(180deg, rgba(128, 54, 255, 0.94) 10%, #00EAF1 100%);
 }
 
 p {
@@ -94,11 +94,20 @@ h2 {
     font-weight: normal;
 }
 
+.nro_background {
+    background-color: #05224D;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nro {
     display: flex;
     width: 100%;
     aspect-ratio: 1;
-    padding: 0.5rem;
+    padding: 0.15rem;
     font-size: 2rem;
     font-weight: 700;
     flex-direction: column;
@@ -106,8 +115,13 @@ h2 {
     align-items: center;
     gap: 0.625rem;
     flex-shrink: 0;
-    background-color: #05224D;
+    background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
     border-radius: 50%;
+}
+.union{
+    height: 2rem;
+    width: 0.1rem;
+    background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
 }
 
 @keyframes clickin {
@@ -152,7 +166,7 @@ h2 {
 
 .btn_degradado {
     border-radius: 0.75rem;
-    padding: 0.5rem 1.25rem;
+    padding: 0.9rem 1.25rem;
     background: var(--background-btn);
     color: #000;
     font-size: 1.25rem;
@@ -170,6 +184,7 @@ h2 {
 
 #inicio.container-fluid {
     overflow: hidden;
+    background-position-y: -177px;
     /* aspect-ratio: 1; */
     /* min-height: calc(100vh - 89.6px); */
     background-image: url('../img/background/background-estadio.png');
@@ -190,14 +205,29 @@ h2 {
     position: absolute;
     bottom: 34%;
     z-index: -1;
+    opacity: 0.3;
 }
 
+/* .humo_1{animation: 3s ease-in-out 0s infinite humo;}
+.humo_2{animation: 3s ease-in-out 3s infinite humo;}
+.humo_3{animation: 3s ease-in-out 6s infinite humo;}
+.humo_4{animation: 3s ease-in-out 9s infinite humo;} */
+
+@keyframes humo {
+    0% { opacity: 0.3; }
+
+    50% { opacity: 1; }
+
+    100% { opacity: 0.3; }
+}
+
+
 #inicio .humo_derecha {
-    right: 0;
+    right: -227px;
 }
 
 #inicio .humo_izquierda {
-    left: 0;
+    left: -211px;
 }
 
 #inicio .luz_izquierda {
@@ -245,7 +275,14 @@ h2 {
     height: 600px;
     background-image: url(../img/background/trama.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
+}
+#primera_edicion{
+    height: 600px;
+    background-image: url(../img/background/trama.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 
 .content_review_user {
@@ -549,5 +586,11 @@ ul.desc_premio li {
 @media (min-width: 1400px) {
     .container-fluid {
         width: 1168px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .inicio_container.container-fluid {
+        width: 1500px;
     }
 }
