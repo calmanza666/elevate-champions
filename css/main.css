@@ -638,7 +638,7 @@ section#reglas a {
 #reloj_preventa1 .segundos h3,
 #reloj_preventa2 .segundos h3,
 #reloj_precioregular .segundos h3 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     color: #51DEE6;
 }
 
