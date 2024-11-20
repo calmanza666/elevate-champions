@@ -182,11 +182,12 @@ h2 {
 .btn_degradado:focus-visible {
     color: #fff !important;
 }
-#inicio.container-fluid.elevate,#premios.container-fluid.elevate{
+#inicio.container-fluid.elevate, #premios.container-fluid.elevate{
     position: relative;
     overflow: hidden;
     width: 100%;
 }
+
 .background_inicio {
     background-position-y: -177px;
     background-position-x: center;
@@ -208,6 +209,19 @@ h2 {
 }
 
 #inicio .humo {
+    position: absolute;
+    bottom: 34%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#premios .luz {
+    position: absolute;
+    width: 90rem;
+    top: -420px;
+    z-index: -2;
+}
+
+#premios .humo {
     position: absolute;
     bottom: 34%;
     z-index: -1;
@@ -244,6 +258,27 @@ h2 {
 }
 
 #inicio .luz_derecha {
+    right: 0;
+    translate: 35% -1%;
+    transform-origin: 64% 81%;
+    animation: 6s ease-in-out 0s infinite luz_derecha;
+}
+#premios .humo_derecha {
+    right: -260px;
+    bottom: 35%;
+}
+
+#premios .humo_izquierda {
+    left: -211px;
+}
+
+#premios .luz_izquierda {
+    translate: -39%;
+    transform-origin: 34% 82%;
+    animation: 6s ease-in-out 0s infinite luz_izquierda;
+}
+
+#premios .luz_derecha {
     right: 0;
     translate: 35% -1%;
     transform-origin: 64% 81%;
@@ -351,7 +386,7 @@ section#primera_edicion,section#reglas,section#reviews{
     width: 95%;
 }
 
-.inicio_container {
+.inicio_container,.premios_container {
     margin-top: 10rem;
     z-index: 1;
 }
