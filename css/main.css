@@ -96,10 +96,10 @@ h2 {
 
 .nro {
     display: flex;
-    width: 5rem;
-    height: 5rem;
-    padding: 2rem 0px;
-    font-size: 3rem;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 0.5rem;
+    font-size: 2rem;
     font-weight: 700;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +107,7 @@ h2 {
     gap: 0.625rem;
     flex-shrink: 0;
     background-color: #05224D;
-    border-radius: 6.25rem;
+    border-radius: 50%;
 }
 
 @keyframes clickin {
@@ -133,7 +133,6 @@ h2 {
 
 .titulo_seccion {
     font-size: 2.75rem;
-    text-align: center;
 }
 
 .parrafo_1 {
@@ -263,13 +262,16 @@ h2 {
 }
 
 .letra_user {
-    border-radius: 6.25rem;
+    border-radius: 50%;
     background: #596B80;
     font-size: 1.15rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 2.25rem;
+    display: flex;
+    aspect-ratio: 1;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes luz_izquierda {
@@ -417,11 +419,7 @@ h2 {
 }
 
 #reviews, .block_separador, #ediciones_pasadas {
-    margin-top: 5rem;
-}
-
-#reviews h2, #ediciones_pasadas h2 {
-    font-size: 3.75rem;
+    margin-top: 2rem;
 }
 
 img.img_comilla_final {
@@ -432,7 +430,7 @@ span.msg_user {
     font-size: 1rem;
 }
 
-section#como-participar {
+section#como_participar {
     overflow: hidden;
     background: url('../img/background/bg_humo.png') center center no-repeat;
     position: relative;
@@ -451,18 +449,16 @@ section#como-participar {
     .container-fluid {
         width: 95%;
     }
-    .titulo_seccion {
-        font-size: 3.75rem;
-    }
+
     html {
         -webkit-print-color-adjust: exact;
         font-size: 14px;
     }
-    .titulo_seccion{
-        text-align: start;
-    }
 }
 @media (min-width: 768px) {
+    .titulo_seccion {
+        font-size: 3.75rem;
+    }
     .container-fluid {
         width: 95%;
     }
@@ -481,6 +477,9 @@ section#como-participar {
 @media (min-width: 992px) {
     .container-fluid {
         width: 95%;
+    }
+    #reviews, .block_separador, #ediciones_pasadas {
+        margin-top: 5rem;
     }
 }
 
