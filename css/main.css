@@ -643,6 +643,10 @@ section#reglas a {
     font-weight: 400;
 }
 
+.card .col-10 {
+    height: 65px;
+}
+
 .card_torneo.inactivo button.btn_degradado{
     background: #646e7b!important;
 }
