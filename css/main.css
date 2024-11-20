@@ -572,6 +572,7 @@ section#reglas a {
 .item_count p {
     font-size: 1.12rem;
     font-weight: 400;
+    color: #fff !important;
 }
 
 .segundos h3 {
