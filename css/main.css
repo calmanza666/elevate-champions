@@ -30,7 +30,7 @@
 
 html {
     -webkit-print-color-adjust: exact;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 *::-webkit-scrollbar {
@@ -339,6 +339,7 @@ h2 {
     text-align: center;
     color: #A0AEC0;
     font-size: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .card_torneo_secundario_valor span {
@@ -389,12 +390,14 @@ h2 {
 .subtitulo {
     color: #fff;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .parrafo {
     color: #fff;
     font-size: 1rem;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 .block .titulo{
@@ -423,24 +426,37 @@ span.msg_user {
     }
     html {
         -webkit-print-color-adjust: exact;
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .titulo_seccion{
+        text-align: start;
     }
 }
 @media (min-width: 768px) {
     .container-fluid {
         width: 95%;
     }
+    html {
+        -webkit-print-color-adjust: exact;
+        font-size: 14px;
+    }
+    .subtitulo {
+        text-align: left;
+    }
+    .parrafo {
+        text-align: left;
+    }
 }
 
 @media (min-width: 992px) {
     .container-fluid {
-        width: 852px;
+        width: 95%;
     }
 }
 
 @media (min-width: 1200px) {
     .container-fluid {
-        width: 1168px;
+        width: 996px;
     }
 }
 
