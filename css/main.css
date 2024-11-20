@@ -617,6 +617,7 @@ section#reglas a {
     font-size: 1.5rem !important;
     font-weight: 600;
     color: #fff !important;
+    margin: 0px !important;
 }
 
 #reloj_lanzamiento .item_count p,
