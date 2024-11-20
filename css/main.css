@@ -456,7 +456,7 @@ section#primera_edicion,section#reglas,section#reviews{
     font-weight: 700;
 }
 
-#ediciones_pasadas, .box_adquirir_cupo {
+#ediciones_pasadas, .box_adquirir_cupo, #premios, #como_participar {
     margin-bottom: 5rem;
 }
 
@@ -497,13 +497,12 @@ section#como_participar {
 }
 
 .box_adquirir_cupo {
-    padding: 5rem 0px;
     font-size: 2.25rem;
-    background: rgb(0, 56, 140);
-    background: -moz-linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
-    background: linear-gradient(180deg, rgba(0, 56, 140, 1) 0%, rgba(4, 30, 79, 1) 32%, rgba(6, 17, 48, 1) 100%);
-    border-radius: 1rem !important;
+}
+
+.box_adquirir_cupo .card_background {
+    padding: 4.5rem;
+    color: #ffffff;
 }
 
 .premio_content strong {
@@ -554,6 +553,26 @@ ul.desc_premio {
 
 ul.desc_premio li {
     font-size: 1rem;
+}
+
+section#reglas a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.item_count h3 {
+    line-height: 5rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.item_count p {
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+
+.segundos h3 {
+    color: #51DEE6;
 }
 
 @media (min-width: 576px) {
