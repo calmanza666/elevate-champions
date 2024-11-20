@@ -28,6 +28,13 @@
     --botones-outline_blanco-hover: none;
 }
 
+.row {
+    --bs-gutter-x: 1.3rem;
+}
+.g-0, .gx-0 {
+    --bs-gutter-x: 0;
+}
+
 html {
     -webkit-print-color-adjust: exact;
     font-size: 10px;
@@ -58,7 +65,8 @@ body {
 p {
     margin-bottom: 0;
     text-wrap: auto;
-    line-height: 1.2;
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
 
 a {
@@ -119,7 +127,7 @@ h2 {
     border-radius: 50%;
 }
 .union{
-    height: 2rem;
+    height: 2.5rem;
     width: 0.1rem;
     background: linear-gradient(270deg, rgba(128, 54, 255, 0.94) 0%, #00EAF1 100%);
 }
@@ -141,17 +149,17 @@ h2 {
 .titulo_principal {
     color: #fff;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.67rem;
     text-align: center;
 }
 
 .titulo_seccion {
-    font-size: 2.75rem;
+    font-size: 2.45rem;
     margin-bottom: 4.8rem;
 }
 
 .parrafo_1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 400;
     line-height: 2.75rem;
@@ -167,11 +175,10 @@ h2 {
 
 .btn_degradado {
     border-radius: 0.75rem!important;
-    padding: 0.9rem 1.25rem!important;
+    padding: 0.7rem 1.1rem!important;
     background: var(--background-btn)!important;
     color: #000!important;
-    font-size: 1.25rem!important;
-    font-size: 1.25rem!important;
+    font-size: 1.10rem!important;
     font-weight: 700!important;
 }
 
@@ -216,16 +223,9 @@ h2 {
 }
 #premios .luz {
     position: absolute;
-    width: 90rem;
-    top: -200px;
+    width: 82rem;
+    top: -242px;
     z-index: -2;
-}
-
-#premios .humo {
-    position: absolute;
-    bottom: 34%;
-    z-index: -1;
-    opacity: 0.3;
 }
 
 .humo_1{animation: 3s ease-in-out 0s infinite humo;}
@@ -243,8 +243,8 @@ h2 {
 
 
 #inicio .humo_derecha {
-    right: -260px;
-    bottom: 35%;
+    right: -387px;
+    bottom: 32%;
 }
 
 #inicio .humo_izquierda {
@@ -263,26 +263,15 @@ h2 {
     transform-origin: 64% 81%;
     animation: 6s ease-in-out 0s infinite luz_derecha;
 }
-#premios .humo_derecha {
-    right: -260px;
-    bottom: 35%;
-}
-
-#premios .humo_izquierda {
-    left: -211px;
-}
-
 #premios .luz_izquierda {
     translate: -39%;
     transform-origin: 34% 82%;
-    animation: 6s ease-in-out 0s infinite luz_izquierda;
 }
 
 #premios .luz_derecha {
     right: 0;
     translate: 35% -1%;
     transform-origin: 64% 81%;
-    animation: 6s ease-in-out 0s infinite luz_derecha;
 }
 
 .block_pasos {
@@ -294,17 +283,20 @@ h2 {
     border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
     border-image-slice: 1;
     background: rgba(0, 0, 0, 0.20);
-    padding: 1rem 1.25rem;
+    padding: 1.7rem 1rem;
     font-size: 1.125rem;
 }
 
 .block ul {
-    padding: 1.25rem;
+    /* padding: 1.25rem; */
     margin: 0px;
+}
+.block ul li{
+    margin-bottom: 0.6rem;
 }
 .frase{
     color: #fff;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
 }
@@ -387,7 +379,7 @@ section#primera_edicion,section#reglas,section#reviews{
     width: 95%;
 }
 
-.inicio_container,.premios_container {
+.inicio_container {
     margin-top: 10rem;
     z-index: 1;
 }
@@ -421,13 +413,13 @@ section#primera_edicion,section#reglas,section#reviews{
 .card_torneo_secundario_label {
     text-align: center;
     color: #A0AEC0;
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
 }
 
 .card_torneo_secundario_valor span {
     color: #A0AEC0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: normal;
 }
 
@@ -457,12 +449,14 @@ section#primera_edicion,section#reglas,section#reviews{
 }
 .card_torneo_secundario_label_caracteristicas {
     color: #fff;
+    font-size: 0.7rem;
 }
 
 .card_torneo_secundario_valor_caracteristicas {
     color: #fff;
     font-weight: 600;
     text-align: center;
+    font: 1.15;
 }
 
 .card_torneo_secundario_null_caracteristicas {
@@ -476,23 +470,24 @@ section#primera_edicion,section#reglas,section#reviews{
 .subtitulo {
     color: #fff;
     font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
 }
 
 .parrafo {
     color: #fff;
-    font-size: 1rem;
     line-height: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 
 .block .titulo{
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
 }
 
-#ediciones_pasadas, .box_adquirir_cupo, #premios, #como_participar {
+#ediciones_pasadas, .box_adquirir_cupo, #premios{
     margin-bottom: 5rem;
 }
 
@@ -517,10 +512,9 @@ span.msg_user {
 section#como_participar {
     overflow: hidden;
     background-image: url(../img/background/bg_humo.png);
-    background-position: center;
+    /* background-position: center; */
     position: relative;
     background-size: contain;
-    padding: 5rem 0px 0px 0px;
 }
 
 #ediciones_pasadas.container-fluid.elevate {
@@ -601,12 +595,12 @@ section#reglas a {
 
 .item_count h3 {
     line-height: 5rem;
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     font-weight: 600;
 }
 
 .item_count p {
-    font-size: 1.12rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #fff !important;
 }
@@ -616,7 +610,7 @@ section#reglas a {
 }
 
 .card_torneo.inactivo button.btn_degradado{
-    background: #646e7b;
+    background: #646e7b!important;
 }
 
 .nombre-oferta{
@@ -633,19 +627,26 @@ section#reglas a {
 }
 
 .icono-dolar{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .precio-dolar{
     color: #fff!important;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
+    margin-left: 0.5rem;
 }
 .abrev-dolar{
     color: #fff!important;
-    padding-top: 8%;
-    font-size: 2rem;
+    padding-top: 13%;
+    font-size: 1.2rem;
     font-weight: 600;
+}
+#reglas{
+    font-size: 1rem;
+}
+.prohibiciones{
+    font-size: 1rem;
 }
 
 
@@ -661,7 +662,7 @@ section#reglas a {
 }
 @media (min-width: 768px) {
     .titulo_seccion {
-        font-size: 3.75rem;
+        font-size: 3.3rem;
     }
     .container-fluid.elevate {
         width: 95%;
@@ -684,6 +685,10 @@ section#reglas a {
     }
     .container-fluid.elevate {
         width: 95%;
+    }
+    html {
+        -webkit-print-color-adjust: exact;
+        font-size: 18px;
     }
 }
 
