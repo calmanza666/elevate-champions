@@ -182,7 +182,7 @@ h2 {
 .btn_degradado:focus-visible {
     color: #fff !important;
 }
-#inicio.container-fluid.elevate{
+#inicio.container-fluid.elevate,#premios.container-fluid.elevate{
     position: relative;
     overflow: hidden;
     width: 100%;
