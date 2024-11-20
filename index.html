@@ -224,7 +224,7 @@
                                 <div class="col-12">
                                     <div class="row row-gap-3">
                                         <div class="col-12">
-                                            <p class="titulo">Fase1</p>
+                                            <p class="titulo">Fase 1</p>
                                         </div>
                                         <div class="col-12">
                                             <div class="row">
@@ -284,7 +284,7 @@
                                 <div class="col-12">
                                     <div class="row row-gap-3">
                                         <div class="col-12">
-                                            <p class="titulo">Fase2</p>
+                                            <p class="titulo">Fase 2</p>
                                         </div>
                                         <div class="col-12">
                                             <div class="row">
@@ -676,6 +676,10 @@
                                         <h2 class="nombre-oferta">Lanzamiento</h2>
                                     </div>
                                     <div class="col-12">
+                                        <div class="row row-gap-5 d-flex align-items-center" id="reloj_lanzamiento">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
                                         <div class="precio-oferta">
                                             <p class="icono-dolar texto_degrade">$</p><p class="precio-dolar">50</p><p class="abrev-dolar">USD</p>
                                         </div>
@@ -694,7 +698,11 @@
                             <div class="card_background">
                                 <div class="row justify-content-center row-gap-4">
                                     <div class="col-12">
-                                        <h2 class="nombre-oferta">Preventa</h2>
+                                        <h2 class="nombre-oferta">Preventa 1</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row row-gap-5 d-flex align-items-center" id="reloj_preventa1">
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="precio-oferta">
@@ -713,7 +721,11 @@
                             <div class="card_background">
                                 <div class="row justify-content-center row-gap-4">
                                     <div class="col-12">
-                                        <h2 class="nombre-oferta">Precio regular</h2>
+                                        <h2 class="nombre-oferta">Preventa 2</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row row-gap-5 d-flex align-items-center" id="reloj_preventa2">
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="precio-oferta">
@@ -733,6 +745,10 @@
                                 <div class="row justify-content-center row-gap-4">
                                     <div class="col-12">
                                         <h2 class="nombre-oferta">Precio regular</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row row-gap-5 d-flex align-items-center" id="reloj_precioregular">
+                                        </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="precio-oferta">
@@ -1151,7 +1167,7 @@
     <section id="ediciones_pasadas" class="container-fluid elevate">
         <div class="container-fluid elevate">
             <div class="row justify-content-center">
-                <div class="col-12 separador_elementos_625">
+                <!--<div class="col-12 separador_elementos_625">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="titulo_seccion text-center">Ediciones <strong><span class="texto_degrade">pasadas</span></strong></h2>
@@ -1176,7 +1192,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="col-12">
                     <div class="box_adquirir_cupo">
                         <div class="row justify-content-center">
@@ -1194,7 +1210,7 @@
                                                 <div class="col-12">
                                                     <div class="row justify-content-center">
                                                         <div class="col-md-6 col-lg-4">
-                                                            <a href="#" class="btn elevate btn_degradado">Unirme al torneo</a>
+                                                            <a href="https://app-trader.impulseworld.pro/r/register" target="_blank" class="btn elevate btn_degradado">Unirme al torneo</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1213,24 +1229,15 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://impulseworld.pro/wp-content/themes/impulsetrading/champions/js/contador.js"></script>
     <!-- <script src="https://impulseworld.pro/wp-content/themes/impulsetrading/champions/js/impulse-products-component.js"></script> -->
     <script>
-
-        var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
-        var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("reloj_torneo").innerHTML = '<div class=col-3><div class="item_count text-center dias"><h3>'+days+'</h3><p>Días</div></div><div class=col-3><div class="item_count text-center horas"><h3>'+hours+'</h3><p>Horas</div></div><div class=col-3><div class="item_count text-center minutos"><h3>'+minutes+'</h3><p>Minutos</div></div><div class=col-3><div class="item_count text-center segundos"><h3>'+seconds+'</h3><p>Segundos</div></div>';
-        if (distance < 0) {
-            clearInterval(x);
-            //document.getElementById("reloj_torneo").innerHTML = "EXPIRED";
-        }
-        }, 1000);
+        contador("11/12/2024 19:00", "reloj_torneo");
+        contador("22/11/2024 23:59", "reloj_lanzamiento", true);
+        contador("28/11/2024 23:59", "reloj_preventa1", true);
+        contador("05/12/2024 23:59", "reloj_preventa2", true);
+        contador("11/12/2024 23:59", "reloj_precioregular", true);
+        reloj_precioregular
     </script>
 </body>
 </html>
