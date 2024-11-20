@@ -471,8 +471,10 @@ span.msg_user {
 
 section#como_participar {
     overflow: hidden;
-    background: url('../img/background/bg_humo.png') center center no-repeat;
+    background-image: url(../img/background/bg_humo.png);
+    background-position: center;
     position: relative;
+    background-size: contain;
     padding: 5rem 0px 0px 0px;
 }
 
