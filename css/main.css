@@ -37,7 +37,7 @@
 
 html {
     -webkit-print-color-adjust: exact;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 *::-webkit-scrollbar {
@@ -223,10 +223,11 @@ h2 {
 }
 #premios .luz {
     position: absolute;
-    width: 82rem;
-    top: -242px;
+    width: 34rem;
+    top: -92px;
     z-index: -2;
 }
+
 
 .humo_1{animation: 3s ease-in-out 0s infinite humo;}
 .humo_2{animation: 3s ease-in-out 3s infinite humo;}
@@ -512,7 +513,7 @@ span.msg_user {
 section#como_participar {
     overflow: hidden;
     background-image: url(../img/background/bg_humo.png);
-    /* background-position: center; */
+    background-repeat: no-repeat;
     position: relative;
     background-size: contain;
 }
@@ -526,9 +527,15 @@ section#como_participar {
     position: relative;
 }
 
-.box_adquirir_cupo {
-    font-size: 2.25rem;
+.box_adquirir_cupo .card.card_torneo p{
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
+
+/* .box_adquirir_cupo p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+} */
 
 .box_adquirir_cupo .card_background {
     padding: 1.25rem 1rem;
@@ -708,6 +715,12 @@ section#reglas a {
 }
 
 @media (min-width: 992px) {
+    #premios .luz {
+        position: absolute;
+        width: 82rem;
+        top: -242px;
+        z-index: -2;
+    }
     .box_adquirir_cupo .card_background {
         padding: 4.5rem;
     }
@@ -721,8 +734,12 @@ section#reglas a {
 }
 
 @media (min-width: 1200px) {
+    .box_adquirir_cupo p{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
     .container-fluid.elevate {
-        width: 996px;
+        width: 1100px;
     }
 }
 
