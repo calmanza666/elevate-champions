@@ -166,13 +166,13 @@ h2 {
 }
 
 .btn_degradado {
-    border-radius: 0.75rem;
-    padding: 0.9rem 1.25rem;
-    background: var(--background-btn);
-    color: #000;
-    font-size: 1.25rem;
-    font-size: 1.25rem;
-    font-weight: 700;
+    border-radius: 0.75rem!important;
+    padding: 0.9rem 1.25rem!important;
+    background: var(--background-btn)!important;
+    color: #000!important;
+    font-size: 1.25rem!important;
+    font-size: 1.25rem!important;
+    font-weight: 700!important;
 }
 
 .btn_degradado:hover,
@@ -522,7 +522,10 @@ section#como_participar {
     margin-bottom: 1rem;
     background: url(../img/iconos/check.svg) no-repeat left center;
     padding: 0px 0 0px 2rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+#reloj_torneo{
+    color: #fff;
 }
 
 .no-check {
@@ -596,14 +599,17 @@ section#reglas a {
     font-weight: 600;
 }
 .precio-dolar{
+    color: #fff!important;
     font-size: 3.5rem;
     font-weight: 600;
 }
 .abrev-dolar{
+    color: #fff!important;
     padding-top: 8%;
     font-size: 2rem;
     font-weight: 600;
 }
+
 
 @media (min-width: 576px) {
     .container-fluid.elevate {
