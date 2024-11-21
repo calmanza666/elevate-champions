@@ -65,7 +65,7 @@ body {
 p {
     margin-bottom: 0;
     text-wrap: auto;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem; */
     font-size: 1rem;
 }
 
