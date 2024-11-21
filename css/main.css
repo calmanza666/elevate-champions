@@ -286,6 +286,7 @@ h2 {
     background: rgba(0, 0, 0, 0.20);
     padding: 1.7rem 1rem;
     font-size: 1.125rem;
+    color: #ffffff !important;
 }
 
 .block ul {
