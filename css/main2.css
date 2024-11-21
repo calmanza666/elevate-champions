@@ -752,6 +752,9 @@ section#reglas a {
 }
 
 @media (min-width: 1200px) {
+    .abrev-dolar {
+        margin-top: 37px;
+    }
     .box_adquirir_cupo p{
         font-size: 2rem;
         line-height: 2rem;
