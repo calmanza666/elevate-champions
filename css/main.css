@@ -678,8 +678,9 @@ section#reglas a {
 }
 
 .icono-dolar{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
+    margin-top: 5%;
 }
 .precio-dolar{
     color: #fff!important;
@@ -689,7 +690,7 @@ section#reglas a {
 }
 .abrev-dolar{
     color: #fff!important;
-    padding-top: 4%;
+    margin-top: 15%;
     font-size: 1.2rem;
     font-weight: 600;
 }
