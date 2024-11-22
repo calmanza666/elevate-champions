@@ -284,7 +284,7 @@ h2 {
     border-image: linear-gradient(90deg, rgba(0,234,241,1) 0%, rgba(128,54,255,1) 100%);
     border-image-slice: 1;
     background: rgba(0, 0, 0, 0.20);
-    padding: 1.7rem 1rem;
+    padding: .85rem;
     font-size: 1.125rem;
     color: #ffffff !important;
 }
@@ -293,9 +293,15 @@ h2 {
     /* padding: 1.25rem; */
     margin: 0px;
 }
+
 .block ul li{
     margin-bottom: 0.6rem;
 }
+
+.block hr {
+    margin: .5rem 0px;
+}
+
 .frase{
     color: #fff;
     font-size: 2rem;
@@ -403,6 +409,7 @@ section#primera_edicion,section#reglas,section#reviews{
     color: #fff;
     font-size: 1.75rem;
     text-align: center;
+    margin: 0px;
 }
 
 .card_torneo_secundario {
@@ -415,7 +422,7 @@ section#primera_edicion,section#reglas,section#reviews{
 .card_torneo_secundario_label {
     text-align: center;
     color: #A0AEC0;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     margin-bottom: 0.3rem;
 }
 
@@ -429,7 +436,7 @@ section#primera_edicion,section#reglas,section#reviews{
     text-align: center;
     color: #fff;
     font-weight: 700;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
 }
 .separador_elementos_625{
     margin-bottom: 6.25rem;
@@ -568,7 +575,7 @@ section#como_participar {
 
 .no-check {
     width: 100%;
-    font-size: 1rem;
+    font-size: .85rem;
     padding: .45rem 0rem !important;
     font-weight: 700;
     text-align: center;
@@ -702,6 +709,9 @@ section#reglas a {
     font-size: 1rem;
 }
 
+#premios .titulo_seccion {
+    margin-bottom: 2.5rem;
+}
 
 @media (min-width: 576px) {
     .container-fluid.elevate {
